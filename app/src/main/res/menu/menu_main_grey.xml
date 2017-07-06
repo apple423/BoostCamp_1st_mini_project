@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.han.boostcamp1.MainActivity">
+    <!--<item
+        android:id="@+id/action_news"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_friend"
+        android:orderInCategory="200"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_earth"
+        android:orderInCategory="300"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_list"
+        android:orderInCategory="400"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        />-->
+
+
+</menu>

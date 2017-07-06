@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.han.boostcamp1.MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3B5999"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:weightSum="1"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageButton
+                android:id="@+id/action_messege"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="start"
+                android:src="@drawable/ic_plain_white"
+                android:background="#3B5999"
+                android:scaleType="centerInside"
+                android:contentDescription="action_messege"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/myEditText"
+                android:drawableStart="@drawable/search_tool"
+                android:hint="@string/search"
+
+                />
+
+            <ImageButton
+                android:id="@+id/action_messenger"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_message_white"
+                android:background="#3B5999"
+                android:contentDescription="action_messeger"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="5dp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+
+            />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="#365C9B"
+        app:srcCompat="@drawable/write"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

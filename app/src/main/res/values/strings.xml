@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BoostCamp1</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">검색</string>
+    <string name="comment">댓글 0개</string>
+    <string name="like_count">양민규님 외 30명</string>
+</resources>
