@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TableLayout;
@@ -23,32 +24,30 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    Toolbar toolbar;
     ViewPager viewPager;
     ImageButton messageButton;
     ImageButton messengerButton;
+    EditText toolbarEditText;
+    TabLayout tabLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
         messageButton = (ImageButton) findViewById(R.id.action_messege);
         messageButton.setOnClickListener(this);
-
+        toolbarEditText = (EditText) findViewById(R.id.toolbar_EditText);
         messengerButton = (ImageButton) findViewById(R.id.action_messenger);
         messengerButton.setOnClickListener(this);
-
-//        Toolbar toolbar1 = (Toolbar) findViewById(R.id.toolbar_grey);
-//        //setSupportActionBar(toolbar1);
-//        toolbar1.inflateMenu(R.menu.menu_main_grey);
-        final TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-
-
-
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
         viewPager = (ViewPager) findViewById(R.id.viewpager);
+
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(),4);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -98,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
+
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // automatically handle clicks on the Home/Up button_white, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 

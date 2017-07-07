@@ -24,6 +24,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
             case 0 : return new MainFragment();
 
+            case 1: return new SecondFragment();
+
             default: return new OtherFragment();
 
         }

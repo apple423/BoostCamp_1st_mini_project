@@ -4,4 +4,7 @@
     <string name="search">검색</string>
     <string name="comment">댓글 0개</string>
     <string name="like_count">양민규님 외 30명</string>
+    <string name="agree">수락</string>
+    <string name="delete">삭제</string>
+    <string name="friendRequest">친구 요청</string>
 </resources>
